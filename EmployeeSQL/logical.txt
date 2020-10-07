@@ -1,0 +1,37 @@
+# Logical schema
+
+employees
+-
+empl PK
+em_title_id FK - titles.title_id
+birth_date 
+first_name
+last_name
+sex
+hite_date
+
+
+salaries
+-
+emp_no FK - employees.empl
+salary
+
+titles
+-
+title_id PK
+title
+
+dept_manager
+-
+d FK - departments.dept_no
+emp_no FK - employees.empl
+
+dept_emp
+-
+dept FK - employees.empl
+dept_no FK - departments.dept_no
+
+departments
+-
+dept_no PK
+dept_name
